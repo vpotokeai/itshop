@@ -143,13 +143,11 @@ header,
 
 header .presentation {
 	margin: 50px 0;
-	background: url('./img/it.jpg') no-repeat;
 	width: 100%;
-	height: 450px;
-	background-size: auto;
+	height: 400px;
+	background-size: contain;
 	background-position: center center;
-	background-blend-mode: multiply;
-	background-color: #ffffff;
+	background-repeat: no-repeat;
 }
 
 .categories div {
@@ -242,9 +240,12 @@ main .item {
 main .item img,
 .full-item img {
 	width: 100%;
+	height: 250px;
+	object-fit: contain;
 	border-radius: 10px 10px 10px 10px;
 	transition: transform 500ms ease;
 	cursor: pointer;
+	background-color: #f8f8f8;
 	/* Улучшения для изображений */
 	-webkit-user-drag: none;
 	-khtml-user-drag: none;
@@ -399,9 +400,10 @@ footer {
 	}
 
 	header .presentation {
-		height: 250px;
+		height: 200px;
 		margin: 30px 0;
-		background-size: cover;
+		background-size: contain;
+		background-position: center;
 	}
 
 	.categories {
@@ -424,6 +426,11 @@ footer {
 		margin-bottom: 30px;
 		border-radius: 10px;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	main .item img {
+		height: 200px;
+		object-fit: contain;
 	}
 
 	main .add-to-cart,
@@ -496,6 +503,11 @@ footer {
 		margin-bottom: 20px;
 		border-radius: 8px;
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	main .item img {
+		height: 180px;
+		object-fit: contain;
 	}
 
 	main .add-to-cart,
